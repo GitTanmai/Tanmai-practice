@@ -1,0 +1,13 @@
+CREATE TABLE COMPANY(
+  Seq		   SERIAL PRIMARY KEY,
+  High         real,
+  Low         real,
+  Open         real,
+  Close         real,
+  Volume         real,
+  Adj_Close        real,
+  Company_Name		varchar(50),
+  Date_Inserted		date
+);
+
+select * from COMPANY order by seq desc;
